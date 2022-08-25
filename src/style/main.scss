@@ -1,0 +1,311 @@
+@import './base.scss';
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+input::placeholder {
+    color: #878787;
+}
+
+input[type='text']:focus {
+    outline: 2px solid #67b5d2;
+}
+
+.chat-container {
+    display: flex;
+    width: 1000px;
+    height: 80%;
+    border: 1px solid #dadada;
+}
+
+.avatar {
+    position: relative;
+    width: 45px;
+    height: 45px;
+
+    img {
+        object-fit: cover;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .avatar_online {
+        position: absolute;
+        content: '';
+        bottom: -2px;
+        right: -5px;
+    }
+}
+
+// Sidebar start
+.chat-sidebar {
+    border-right: solid 1px #dadada;
+    max-width: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        padding: 15px;
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #dadada;
+
+        &-user {
+            margin-bottom: 10px;
+            position: relative;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            button {
+                cursor: pointer;
+                border: none;
+                background-color: #f5cece;
+                padding: 10px 15px;
+                border-radius: 20px;
+                font-weight: 500;
+
+                &:hover {
+                    background-color: #fd8a8a;
+                }
+            }
+        }
+        &-search {
+            display: block;
+            position: relative;
+
+            input {
+                padding: 5px 10px;
+                padding-left: 23px;
+                border-radius: 30px;
+                border: 1px solid #e4e4e4;
+                background-color: #fafafa;
+                width: 100%;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .search-icon {
+                position: absolute;
+                content: '';
+                top: 9px;
+                left: 5px;
+            }
+        }
+    }
+
+    &__users {
+        flex-grow: 1;
+        background-color: #fff;
+        overflow-y: auto;
+    }
+
+    &__title {
+        color: #00aff0;
+        padding: 30px 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.user-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 70px;
+
+    &__container {
+        cursor: pointer;
+        border-bottom: 1px solid #dadada;
+        padding: 20px 15px;
+
+        &--active {
+            background-color: #d8e9fb;
+        }
+    }
+
+    &__image {
+        position: relative;
+        margin-right: 15px;
+    }
+
+    &__info {
+        max-width: 80%;
+    }
+
+    &__name {
+        margin-right: 90px;
+        margin-bottom: 2px;
+        white-space: nowrap;
+    }
+
+    &__message {
+        color: #878787;
+        overflow-wrap: break-word;
+
+        &--unread {
+            color: #00aff0;
+        }
+    }
+
+    &__date {
+        font-size: 12px;
+        white-space: nowrap;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+// Sidebar end
+
+// Chat-dialog start
+.chat-dialog__window {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.window-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    max-width: 80%;
+
+    &__img {
+        align-self: start;
+        margin-right: 8px;
+    }
+
+    &__text {
+        position: relative;
+        padding: 10px;
+        color: #fff;
+        background-color: #3b4254;
+        border-radius: 20px;
+        overflow-wrap: break-word;
+        max-width: 100%;
+    }
+
+    &__date {
+        position: absolute;
+        content: '';
+        color: #878787;
+        font-size: 11px;
+        bottom: -20px;
+        left: 10px;
+        white-space: nowrap;
+    }
+}
+
+.window-message-my {
+    align-self: end;
+
+    .window-message__text {
+        background-color: #e0e0e0;
+        color: #000;
+    }
+    .window-message__date {
+        left: auto;
+        right: 10px;
+    }
+}
+
+.chat-dialog {
+    max-width: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #dadada;
+
+        .avatar {
+            margin-right: 15px;
+        }
+    }
+    &__window {
+        flex-grow: 1;
+        background-color: #fafafa;
+        border-bottom: 1px solid #dadada;
+        overflow-y: auto;
+    }
+    &__bottom {
+        background-color: #f5f5f5;
+        padding: 20px;
+
+        &-input {
+            position: relative;
+        }
+
+        input {
+            padding: 5px 20px;
+            padding-right: 45px;
+            border-radius: 30px;
+            border: 1px solid #e4e4e4;
+            background-color: #fafafa;
+            width: 100%;
+            font-size: 14px;
+            line-height: 30px;
+        }
+
+        .send-icon {
+            position: absolute;
+            cursor: pointer;
+            top: 12px;
+            right: 15px;
+            color: #878787;
+            transition: color 0.1s ease-in;
+        }
+        .send-icon:hover {
+            color: #00aff0;
+            transition: color 0.1s ease-in;
+        }
+    }
+}
+
+// Chat-dialog end
+
+// Login start
+.login {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 400px;
+        max-height: 220px;
+        height: 100%;
+        width: 100%;
+        background-color: #f5f5f5;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: #000;
+        background-color: #00aff0;
+        border-radius: 20px;
+        font-size: 18px;
+        padding: 10px 20px;
+        border: none;
+
+        &:hover {
+            color: #fff;
+            background-color: #005573;
+        }
+    }
+}
+
+// Login end

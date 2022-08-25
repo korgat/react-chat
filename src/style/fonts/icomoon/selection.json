@@ -1,0 +1,111 @@
+{
+    "IcoMoonType": "selection",
+    "icons": [
+        {
+            "icon": {
+                "paths": [
+                    "M621.668 653.668c-44.476 31.692-98.895 50.332-157.668 50.332-150.221 0-272-121.779-272-272s121.779-272 272-272c150.221 0 272 121.779 272 272 0 75.111-30.445 143.111-79.667 192.333l191.916 191.916c8.802 8.802 8.588 22.915-0.249 31.751-8.898 8.898-23.052 8.948-31.751 0.249l-194.581-194.581zM464 672c132.548 0 240-107.452 240-240s-107.452-240-240-240c-132.548 0-240 107.452-240 240s107.452 240 240 240v0z"
+                ],
+                "attrs": [{}],
+                "isMulticolor": false,
+                "isMulticolor2": false,
+                "tags": ["search"],
+                "grid": 32
+            },
+            "attrs": [{}],
+            "properties": { "order": 1, "id": 0, "prevSize": 32, "code": 59648, "name": "search" },
+            "setIdx": 1,
+            "setId": 6,
+            "iconIdx": 0
+        },
+        {
+            "icon": {
+                "paths": ["M86 896v-298l640-86-640-86v-298l896 384z"],
+                "attrs": [{}],
+                "isMulticolor": false,
+                "isMulticolor2": false,
+                "tags": ["send"],
+                "grid": 24
+            },
+            "attrs": [{}],
+            "properties": { "order": 1, "id": 1, "prevSize": 24, "code": 59649, "name": "send" },
+            "setIdx": 2,
+            "setId": 5,
+            "iconIdx": 0
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125zM708 324l60 60-342 342-212-214 60-60 152 152z"
+                ],
+                "attrs": [{}],
+                "isMulticolor": false,
+                "isMulticolor2": false,
+                "tags": ["check_circle_outline"],
+                "grid": 24
+            },
+            "attrs": [{}],
+            "properties": {
+                "order": 1,
+                "id": 0,
+                "prevSize": 24,
+                "code": 59652,
+                "name": "check_circle_outline"
+            },
+            "setIdx": 2,
+            "setId": 5,
+            "iconIdx": 1
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M438.857 449.143h414.286c4 22.286 6.857 44 6.857 73.143 0 250.286-168 428.571-421.143 428.571-242.857 0-438.857-196-438.857-438.857s196-438.857 438.857-438.857c118.286 0 217.714 43.429 294.286 114.857l-119.429 114.857c-32.571-31.429-89.714-68-174.857-68-149.714 0-272 124-272 277.143s122.286 277.143 272 277.143c173.714 0 238.857-124.571 249.143-189.143h-249.143v-150.857z"
+                ],
+                "width": 860.0137142857142,
+                "attrs": [],
+                "isMulticolor": false,
+                "isMulticolor2": false,
+                "tags": ["google"],
+                "defaultCode": 61856,
+                "grid": 14
+            },
+            "attrs": [],
+            "properties": {
+                "name": "google",
+                "id": 376,
+                "order": 3,
+                "prevSize": 28,
+                "code": 61856
+            },
+            "setIdx": 3,
+            "setId": 4,
+            "iconIdx": 376
+        }
+    ],
+    "height": 1024,
+    "metadata": { "name": "icomoon" },
+    "preferences": {
+        "showGlyphs": true,
+        "showQuickUse": true,
+        "showQuickUse2": true,
+        "showSVGs": true,
+        "fontPref": {
+            "prefix": "icon-",
+            "metadata": { "fontFamily": "icomoon" },
+            "metrics": { "emSize": 1024, "baseline": 6.25, "whitespace": 50 },
+            "embed": false
+        },
+        "imagePref": {
+            "prefix": "icon-",
+            "png": true,
+            "useClassSelector": true,
+            "color": 0,
+            "bgColor": 16777215,
+            "classSelector": ".icon",
+            "name": "icomoon"
+        },
+        "historySize": 50,
+        "showCodes": true,
+        "gridSize": 16
+    }
+}
